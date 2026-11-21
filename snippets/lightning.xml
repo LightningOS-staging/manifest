@@ -54,6 +54,8 @@
   <!-- External -->
   <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="lightning" />
   <project path="external/bouncycastle" name="external_bouncycastle" remote="lightning" />
+  <project path="external/libpng" name="external_libpng" groups="pdk" remote="lightning" />
+  <project path="external/pffft" name="external_pffft" groups="pdk" remote="lightning" />
   <project path="external/piex" name="external_piex" groups="pdk" remote="lightning" />
 
   <!-- Frameworks -->
@@ -68,12 +70,12 @@
   <project path="hardware/google/pixel" name="hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="lightning" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="lightning" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="lightning" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" remote="lightning" revision="17.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8450-6.6/audio/primary-hal" name="hardware_qcom_audio-ar" groups="qcom,waipio-6.6-vendor" remote="lightning" revision="17.0-caf-sm8450-6.6" />
+  <project path="hardware/qcom-caf/sm8450-6.6/display/hal" name="hardware_qcom_display" groups="qcom" remote="lightning" revision="17.0-caf-sm8450-6.6" />
 
   <!-- Kernel -->
   <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="lightning" />
-  
-  <!-- Libcore -->
-  <project path="libcore" name="libcore" groups="pdk,sysui-studio" remote="lightning" />
 
   <!-- LineageOS additions -->
   <project path="lineage-sdk" name="lineage-sdk" remote="lightning" />
@@ -98,11 +100,13 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lightning" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="lightning" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" groups="apps_stk,pdk-fs" remote="lightning" />
+  <project path="packages/apps/SystemUIClocks" name="packages_apps_SystemUIClocks" remote="lightning" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" groups="apps_stk,pdk-fs" remote="lightning" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="lightning" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lightning" />
+  <project path="packages/modules/common" name="packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="lightning" />  
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/resources/apps" name="packages_resources_apps" remote="lightning" />
@@ -119,8 +123,8 @@
   <project path="system/fs/fs_mgr" name="system_fs_fs_mgr" groups="pdk" remote="lightning" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="lightning" />
   <project path="system/media" name="system_media" groups="pdk" remote="lightning" />
-  <project path="system/memory/libdmabufheap" name="system_memory_libdmabufheap" groups="pdk" remote="lightning" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="lightning" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="lightning" />  
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="lightning" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="lightning" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="lightning" />  
