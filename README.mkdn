@@ -19,7 +19,7 @@
 ### **Initialize Repository**
 
 ```bash
-repo init -u https://github.com/LightningOS-AOSP/manifest -b 1.1 --git-lfs
+repo init -u https://github.com/LightningOS-staging/manifest -b 1.1 --git-lfs
 ```
 
 ### **Sync Sources**
